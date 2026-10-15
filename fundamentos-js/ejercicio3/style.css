@@ -1,4 +1,89 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #2d3748;
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+/* Contenido principal */
+body > h1,
+body > h3,
+body > #solucion {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Título principal */
 h1 {
-    color: chocolate;
-    font-family: 'Courier New', Courier, monospace;
+    background-color: #ffffff;
+    color: #2563eb;
+    padding: 30px;
+    border-bottom: 2px solid #e5e7eb;
+    border-radius: 12px 12px 0 0;
+    font-size: 32px;
+}
+
+/* Subtítulo */
+h3 {
+    background-color: #ffffff;
+    padding: 20px 30px 30px;
+    border-radius: 0 0 12px 12px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #64748b;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    margin-bottom: 25px;
+}
+
+/* Tarjeta de contenido */
+#solucion {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 4px solid #2563eb;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    line-height: 1.8;
+}
+
+/* Título de la tarjeta */
+#solucion h2 {
+    color: #2563eb;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+/* Párrafos */
+#solucion p {
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 600px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+        padding: 22px;
+    }
+
+    h3 {
+        font-size: 16px;
+        padding: 18px 22px 25px;
+    }
+
+    #solucion {
+        padding: 20px;
+    }
 }
