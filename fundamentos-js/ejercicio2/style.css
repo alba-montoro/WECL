@@ -1,0 +1,89 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #2d3748;
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+/* Contenido principal */
+body > h1,
+body > h3,
+body > div {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Título principal */
+h1 {
+    background-color: #ffffff;
+    color: #2563eb;
+    padding: 30px;
+    border-radius: 12px 12px 0 0;
+    font-size: 32px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+/* Subtítulo */
+h3 {
+    background-color: #ffffff;
+    padding: 20px 30px 30px;
+    border-radius: 0 0 12px 12px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #64748b;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    margin-bottom: 25px;
+}
+
+/* Resultados */
+#solucion,
+#solucion-filtrado {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+/* Separación entre los resultados */
+#solucion {
+    border-left: 4px solid #2563eb;
+}
+
+#solucion-filtrado {
+    border-left: 4px solid #16a34a;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 600px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+        padding: 22px;
+    }
+
+    h3 {
+        font-size: 16px;
+        padding: 18px 22px 25px;
+    }
+
+    #solucion,
+    #solucion-filtrado {
+        padding: 20px;
+        font-size: 14px;
+    }
+}
