@@ -1,10 +1,12 @@
-/*Texto*/
-let nombre = "Alba"
-let apellido1 = "Montoro"
-let apellido2 = "Ruiz"
+let numeros = [];
 
-/*Numérico*/
-let edad = 19
-let anioNacimiento = 2007
+for (let i = 0; i < 100; i++) {
+    numeros.push(Math.floor(Math.random() * 101));
+}
 
-console.log(nombre, apellido1, apellido2, "Edad:", edad, "Nacida en:", anioNacimiento)
+console.table(numeros);
+
+// Filtrar números entre 20 y 50
+let filtrados = numeros.filter(numero => numero >= 20 && numero <= 50);
+
+console.table(filtrados);
