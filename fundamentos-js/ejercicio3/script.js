@@ -1,10 +1,25 @@
-/*Texto*/
-let nombre = "Alba"
-let apellido1 = "Montoro"
-let apellido2 = "Ruiz"
+// Declaramos el objeto persona
+let persona = {
+    nombre: "Laura",
+    edad: 20,
+    altura: 1.65,
+    esEstudiante: true,
+    trabajo: null,
+    segundoNombre: undefined,
 
-/*Numérico*/
-let edad = 19
-let anioNacimiento = 2007
+    aficiones: ["leer", "música", "viajar"],
 
-console.log(nombre, apellido1, apellido2, "Edad:", edad, "Nacida en:", anioNacimiento)
+    direccion: {
+        ciudad: "Granada",
+        pais: "España",
+        codigoPostal: "18001"
+    }
+};
+
+// Mostramos el objeto completo
+console.log("Objeto persona:");
+console.log(persona);
+
+// Mostramos las propiedades en forma de tabla
+console.log("Tabla de propiedades:");
+console.table(persona);
