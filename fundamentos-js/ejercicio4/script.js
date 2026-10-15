@@ -1,10 +1,9 @@
-/*Texto*/
-let nombre = "Alba"
-let apellido1 = "Montoro"
-let apellido2 = "Ruiz"
+// Le pedimos al usuario que introduzca los números para la suma
+let num1 = prompt("Introduzca el primer número: ");
+let num2 = prompt("Introduzca el segundo número: ");
 
-/*Numérico*/
-let edad = 19
-let anioNacimiento = 2007
+// Creamos una variable para almacenar la suma
+let suma = Number(num1) + Number(num2);
 
-console.log(nombre, apellido1, apellido2, "Edad:", edad, "Nacida en:", anioNacimiento)
+// Mostramos el resultado
+console.log(suma);

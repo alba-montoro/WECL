@@ -5,7 +5,6 @@ let persona = {
     altura: 1.65,
     esEstudiante: true,
     trabajo: null,
-    segundoNombre: undefined,
 
     aficiones: ["leer", "música", "viajar"],
 
@@ -20,6 +19,3 @@ let persona = {
 console.log("Objeto persona:");
 console.log(persona);
 
-// Mostramos las propiedades en forma de tabla
-console.log("Tabla de propiedades:");
-console.table(persona);
