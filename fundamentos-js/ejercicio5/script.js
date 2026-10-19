@@ -1,10 +1,17 @@
-/*Texto*/
-let nombre = "Alba"
-let apellido1 = "Montoro"
-let apellido2 = "Ruiz"
+// Pedimos que el usuario ingrese un número
+let num = prompt("Introduzca un número: ");
 
-/*Numérico*/
-let edad = 19
-let anioNacimiento = 2007
+// Convertimos la entrada del usuario a número
+let numero = Number(num);
 
-console.log(nombre, apellido1, apellido2, "Edad:", edad, "Nacida en:", anioNacimiento)
+// Creamos la función que compruebe si el resto del número entre 2 es 0
+function parOimpar(numero) {
+    if (numero % 2 === 0) {
+        document.getElementById("resultado").innerHTML = "El número " + numero + " es par";
+    } else {
+        document.getElementById("resultado").innerHTML = "El número " + numero + " es impar";
+    }
+}
+
+// Llamamos la función
+parOimpar(numero);
