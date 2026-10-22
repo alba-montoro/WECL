@@ -1,10 +1,5 @@
-/*Texto*/
-let nombre = "Alba"
-let apellido1 = "Montoro"
-let apellido2 = "Ruiz"
+let valor = document.getElementById('input');
 
-/*Numérico*/
-let edad = 19
-let anioNacimiento = 2007
-
-console.log(nombre, apellido1, apellido2, "Edad:", edad, "Nacida en:", anioNacimiento)
+// Para manipular valores como texto.
+// Para coger valores desde un input es necesario poner .value
+document.getElementById('resultado').textContent = "El valor introducido es:", valor.value;
