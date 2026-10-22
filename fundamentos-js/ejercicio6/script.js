@@ -1,5 +1,8 @@
 let valor = document.getElementById('input');
+let resultado = document.getElementById('resultado');
 
-// Para manipular valores como texto.
-// Para coger valores desde un input es necesario poner .value
-document.getElementById('resultado').textContent = "El valor introducido es:", valor.value;
+// Con este evento hacemos que cada vez que haya un cambio en el input se refleje en la solución
+// Recomendación de la IA
+valor.addEventListener('input', function() {
+    resultado.textContent = "El valor introducido es: " + valor.value;
+});
